@@ -116,7 +116,7 @@ export class SpecificationRewriter {
 }
 
 export async function timeLabelChange(context: Context<"issues.labeled">): Promise<CallbackResult> {
-  if (context.payload.label?.name.toLowerCase().includes("Time")) {
+  if (context.payload.label?.name.toLowerCase().includes("time")) {
     const specificationRewriter = new SpecificationRewriter(context);
     return specificationRewriter.performSpecRewrite();
   } else {

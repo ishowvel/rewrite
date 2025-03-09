@@ -1,5 +1,5 @@
-name = "@ubiquity-os/command-rewrite"
-main = "src/worker.ts"
+name = "ubiquity-os-command-rewrite"
+main = "src/main.ts"
 compatibility_date = "2024-09-23"
 compatibility_flags = [ "nodejs_compat" ]
 [env.dev]
